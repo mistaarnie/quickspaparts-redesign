@@ -1,0 +1,183 @@
+/*-------------------------
+
+MEGA MENU
+
+-------------------------*/
+
+.main-nav,
+.main-nav a,
+.main-nav ul,
+.main-nav li,
+.main-nav div,
+.main-nav form,
+.main-nav input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.main-nav a { text-decoration: none; }
+
+.main-nav li { list-style: none; }
+
+/* Menu Container */
+.main-nav {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: -5px;
+  cursor: default;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: border .3s ease;
+}
+
+/* Menu List */
+.main-nav > li {
+  display: block;
+}
+
+/* Menu Links */
+.main-nav > li > a {
+  position: relative;
+  display: block;
+  height:40px;
+  padding-top:5px;
+  z-index: 510;
+  font-weight: 400;
+  cursor: default;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main-nav > li:hover > a { 
+  color: #ffc348;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+/* Menu Dropdown */
+.main-nav > li > div {
+  position: absolute;
+  width: 250px;
+  height: 470px;
+  top: 35px;
+  left: 0px;
+  opacity: 0;
+  padding: 15px 20px;
+  visibility: hidden;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-transition: all .2s ease .15s;
+  -moz-transition: all .2s ease .15s;
+  -o-transition: all .2s ease .15s;
+  -ms-transition: all .2s ease .15s;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+  z-index: 9999;
+}
+
+.main-nav > li > div > ul, .secondary-nav > li > div > ul {
+  text-align: left;
+  line-height: 2.3em;
+}
+
+.main-nav > li > div > ul > li {
+  width: 210px;
+  font-size: 13px;
+}
+
+.main-nav > li > div > ul > li > a, .secondary-nav > li > div > ul > li > a {
+  color: #333;
+}
+
+.secondary-nav > li > a, .secondary-nav > li > div > ul > li > a {
+  width: 200px;
+  display: inline-block;
+}
+
+
+
+.main-nav > li > div > ul > li:hover > a, .main-nav > li > div > ul > li:hover i {
+  font-weight: 600;
+  color: #ffc348;
+  cursor: pointer;
+}
+
+.main-nav > li > div > ul > li > i {
+  display: block;
+  float: right;
+}
+
+.main-nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
+.main-nav > li > div > h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* Secondary Menu Dropdown */
+.secondary-nav > li > div {
+  position: absolute;
+  width: 250px;
+  height: 470px;
+  top: 0px;
+  left: 250px;
+  opacity: 0;
+  padding: 15px 20px;
+  visibility: hidden;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-transition: all .2s ease .15s;
+  -moz-transition: all .2s ease .15s;
+  -o-transition: all .2s ease .15s;
+  -ms-transition: all .2s ease .15s;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+  z-index: 9999;
+}
+
+.secondary-nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+
+.secondary-nav > li > div > ul > li:hover > a {
+  font-weight: 600;
+  color: #ffc348;
+  cursor: pointer;
+}
+
+
+/* Menu Content Styles */
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  transition: 0.3s ease;
+}
+
+#pumps-menu {
+  height: 120px;
+}
+
+#plumbing-menu {
+  height: 220px;
+}
